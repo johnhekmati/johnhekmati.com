@@ -29,3 +29,8 @@ Local copy of the Architect headshot used on The Cognition Factory site. Re-sync
 ## Presence doctrine
 
 Thin foundation only: LinkedIn + this site. No Substack content machine. Services language only when factory capacity can back it.
+
+## Ops
+
+- Cache / security headers: `_headers` (HTML 300s · css/assets 3600s — same idea as TCF)
+- CF scaffold-to-prod card: [`docs/CF_SCAFFOLD_TO_PROD.md`](docs/CF_SCAFFOLD_TO_PROD.md)

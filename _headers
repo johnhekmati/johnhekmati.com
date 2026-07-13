@@ -1,0 +1,16 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Mutable HTML — short edge cache so copy deploys show up without purge
+/
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Same house standard as tcf-site (overwrite-in-place CSS / media)
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=3600, must-revalidate
