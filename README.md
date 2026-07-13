@@ -6,12 +6,14 @@ Personal site for **John Hekmati** — identity and path. Product platform: [the
 |--|--|
 | **Path** | `C:\Grok\johnhekmati.com` |
 | **GitHub** | `johnhekmati/johnhekmati.com` |
-| **Live** | https://johnhekmati.com (custom domain) · Pages fallback via GitHub |
+| **Live** | Cloudflare Pages project `johnhekmati-com` → custom domain when DNS attached |
+| **Deploy** | Push `main` → Actions → `wrangler pages deploy` (same pattern as TCF) |
 
 ## Stack
 
 - Static HTML + CSS (no build step)
-- Deploy: GitHub Pages (`main` → root)
+- Deploy: Cloudflare Pages via `.github/workflows/deploy.yml`
+- Secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (repo Actions secrets)
 
 ## Local preview
 
