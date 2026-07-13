@@ -1,0 +1,13 @@
+{
+  "name": "johnhekmati-com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal site — johnhekmati.com",
+  "scripts": {
+    "preview": "npx --yes serve .",
+    "deploy": "wrangler pages deploy . --project-name=johnhekmati-com --branch=main --commit-dirty=true"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
