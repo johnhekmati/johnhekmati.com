@@ -478,3 +478,43 @@ strong {
   margin-bottom: 0.75rem;
 }
 
+.work-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem !important;
+  max-width: none !important;
+}
+
+.contact-email {
+  margin: 1.25rem 0 0.5rem !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.contact-email a {
+  color: #fff;
+}
+
+.contact-email a:hover {
+  color: var(--electric);
+}
+
+.contact-alt {
+  margin-top: 1.5rem !important;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.footer-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+}
+
+.footer-sep {
+  color: var(--gray-600);
+  opacity: 0.7;
+}
+
