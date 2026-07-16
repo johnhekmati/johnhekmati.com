@@ -1,19 +1,27 @@
-/* johnhekmati.com — personal mock-up (static; no build step) */
+/* johnhekmati.com — personal site (Lane C · consulting restraint, distinct from TCF) */
 :root {
-  --void: #050810;
-  --void-50: #080c14;
-  --void-100: #0c1220;
-  --void-200: #121a2b;
-  --electric: #3b9eff;
-  --electric-dim: #2563eb;
-  --plasma: #a78bfa;
-  --amber: #f5b942;
-  --gold: #e8a317;
-  --gray-300: #d1d5db;
-  --gray-400: #9ca3af;
-  --gray-500: #6b7280;
-  --gray-600: #4b5563;
-  --border: rgba(255, 255, 255, 0.08);
+  /* Charcoal consulting void — not TCF electric/plasma keynote */
+  --void: #0b0d10;
+  --void-50: #0e1116;
+  --void-100: #14181f;
+  --void-200: #1a1f28;
+  /* Steel accent — modern firm, one note */
+  --accent: #7a93b0;
+  --accent-bright: #9db0c6;
+  --accent-dim: #5c738c;
+  --accent-soft: rgba(122, 147, 176, 0.14);
+  --accent-border: rgba(122, 147, 176, 0.32);
+  /* Legacy aliases so remaining rules keep working */
+  --electric: var(--accent);
+  --electric-dim: var(--accent-dim);
+  --plasma: var(--accent-bright);
+  --amber: #a89b84;
+  --gold: #9a8b72;
+  --gray-300: #d4d7dc;
+  --gray-400: #a0a6b0;
+  --gray-500: #7a808c;
+  --gray-600: #5c616b;
+  --border: rgba(255, 255, 255, 0.07);
   --font: "Segoe UI", system-ui, -apple-system, sans-serif;
   --display: "Segoe UI", system-ui, sans-serif;
   --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
@@ -84,8 +92,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 40;
-  border-bottom: 1px solid transparent;
-  background: rgba(5, 8, 16, 0.72);
+  border-bottom: 1px solid var(--border);
+  background: rgba(11, 13, 16, 0.88);
   backdrop-filter: blur(14px);
 }
 
@@ -131,15 +139,15 @@ img {
   display: inline-flex !important;
   padding: 0.4rem 0.9rem;
   border-radius: 0.5rem;
-  background: rgba(59, 158, 255, 0.12);
-  border: 1px solid rgba(59, 158, 255, 0.35);
-  color: var(--electric) !important;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-bright) !important;
   font-weight: 600;
   font-size: 0.85rem;
 }
 
 .nav-cta:hover {
-  background: rgba(59, 158, 255, 0.2);
+  background: rgba(122, 147, 176, 0.22);
   text-decoration: none !important;
 }
 
@@ -147,8 +155,8 @@ img {
 .hero {
   padding: 3.5rem 0 4rem;
   background:
-    radial-gradient(ellipse 70% 50% at 20% 0%, rgba(59, 158, 255, 0.12), transparent),
-    radial-gradient(ellipse 50% 40% at 90% 20%, rgba(167, 139, 250, 0.1), transparent);
+    radial-gradient(ellipse 60% 45% at 15% 0%, rgba(122, 147, 176, 0.08), transparent),
+    radial-gradient(ellipse 40% 35% at 95% 15%, rgba(122, 147, 176, 0.04), transparent);
 }
 
 .hero-grid {
@@ -215,9 +223,9 @@ h1 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--electric), var(--electric-dim));
-  color: #fff !important;
-  box-shadow: 0 0 32px rgba(59, 158, 255, 0.2);
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent-dim));
+  color: #0b0d10 !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 
 .btn-secondary {
@@ -227,7 +235,7 @@ h1 {
 }
 
 .btn-secondary:hover {
-  border-color: rgba(59, 158, 255, 0.35);
+  border-color: var(--accent-border);
   color: #fff !important;
 }
 
@@ -266,7 +274,7 @@ h1 {
   inset: auto -1.5rem -1.5rem auto;
   width: 8rem;
   height: 8rem;
-  background: rgba(167, 139, 250, 0.18);
+  background: rgba(122, 147, 176, 0.12);
   filter: blur(40px);
   z-index: -1;
   border-radius: 50%;
@@ -306,8 +314,46 @@ h1 {
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--plasma);
+  color: var(--accent);
   margin: 0 0 0.6rem;
+}
+
+.work-card {
+  margin-top: 1.5rem;
+  padding: 1.35rem 1.4rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--void-100);
+}
+
+.work-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.work-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.work-card p {
+  max-width: none;
+}
+
+.work-actions {
+  margin-top: 1rem !important;
+}
+
+.work-aside {
+  margin-top: 1.5rem !important;
+  font-size: 0.9rem;
+  color: var(--gray-500);
 }
 
 h2 {
@@ -414,7 +460,7 @@ strong {
 .steps li {
   position: relative;
   padding: 0 0 1.15rem 1.25rem;
-  border-left: 1px solid rgba(59, 158, 255, 0.25);
+  border-left: 1px solid rgba(122, 147, 176, 0.28);
 }
 
 .steps li:last-child {
@@ -430,8 +476,8 @@ strong {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 50%;
-  background: var(--electric);
-  box-shadow: 0 0 12px rgba(59, 158, 255, 0.5);
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(122, 147, 176, 0.35);
 }
 
 .steps strong {
@@ -470,12 +516,12 @@ strong {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--amber);
-  border: 1px solid rgba(245, 185, 66, 0.35);
-  background: rgba(245, 185, 66, 0.08);
+  color: var(--accent-bright);
+  border: 1px solid var(--accent-border);
+  background: var(--accent-soft);
   padding: 0.25rem 0.55rem;
   border-radius: 999px;
-  margin-bottom: 0.75rem;
+  margin: 0;
 }
 
 .work-actions {

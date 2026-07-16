@@ -30,7 +30,7 @@ Local copy of the Architect headshot used on The Cognition Factory site. Re-sync
 
 Thin foundation only: LinkedIn + this site. No Substack content machine. Services language only when factory capacity can back it.
 
-**Page job:** who John is + short path → funnel to [thecognitionfactory.com](https://thecognitionfactory.com). Not a second product site.
+**Page job (Lane C):** real person under real load — martial formation, family, hard domains — then one product card. Visual: charcoal + steel consulting palette (not TCF electric/plasma). Contact first; product secondary. Faith stays private. Not a second product site.
 
 **Contact:** `hello@johnhekmati.com` (Proton custom domain; catch-all OK). Product form remains on TCF.
 
