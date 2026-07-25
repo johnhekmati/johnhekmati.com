@@ -1,6 +1,6 @@
 # johnhekmati.com
 
-Personal site for **John Hekmati** — identity and path. Product platform: [thecognitionfactory.com](https://thecognitionfactory.com).
+Personal site for **John Hekmati** — identity and path.
 
 | | |
 |--|--|
@@ -11,7 +11,7 @@ Personal site for **John Hekmati** — identity and path. Product platform: [the
 
 ## Stack
 
-- Static HTML + CSS (no build step)
+- Static HTML + CSS + small inline reveal JS (no build step)
 - Deploy: Cloudflare Pages via `.github/workflows/deploy.yml`
 - Secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` (repo Actions secrets)
 
@@ -24,15 +24,15 @@ npx --yes serve
 
 ## Portrait
 
-Local copy of the Architect headshot used on The Cognition Factory site. Re-sync if the public photo changes.
+Local copy of the Architect headshot. Re-sync if the public photo changes.
 
 ## Presence doctrine
 
 Thin foundation only: LinkedIn + this site. No Substack content machine. Services language only when factory capacity can back it.
 
-**Page job (Lane C):** real person under real load — martial formation, family, hard domains — then one product card. Visual: charcoal + steel consulting palette (not TCF electric/plasma). Contact first; product secondary. Faith stays private. Not a second product site.
+**Page job:** real person under real load — martial formation as life anchor, family, hard domains — then the worlds he builds (Hekmati Consulting Group, The Cognition Factory, Form & Frame Design, Professional MMA Institute). Visual: elevated charcoal personal palette with steel + warm-metal life accents (not TCF electric/plasma, not FFD paper/teal, not PMMAI gold). Contact first. Faith stays private. Not a second product or consulting site — those have their own homes.
 
-**Contact:** `hello@johnhekmati.com` (Proton custom domain; catch-all OK). Product form remains on TCF.
+**Contact:** `hello@johnhekmati.com` (Proton custom domain; catch-all OK). Product form remains on TCF. Consulting routing points to HCG.
 
 ## Ops
 

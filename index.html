@@ -3,268 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="John Hekmati — engineer, father, martial artist, founder. A real life under load, and work built to improve situations like mine." />
+  <meta name="description" content="John Hekmati — engineer, father, martial artist, founder. A real life under load, and the worlds he builds." />
   <meta name="theme-color" content="#0b0d10" />
   <title>John Hekmati</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="icon" type="image/jpeg" href="/assets/images/john-hekmati.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css?v=jh2" />
+  <link rel="icon" type="image/jpeg" href="/assets/images/john-hekmati.jpg?v=upres1" />
+
   <meta property="og:title" content="John Hekmati" />
-  <meta property="og:description" content="A real person with a real life. This is my space. I also build tools that improve people’s situations — because I needed them under nearly impossible ones." />
+  <meta property="og:description" content="A real life under load — martial formation, family, hard domains — and the worlds he builds." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://johnhekmati.com" />
-  <meta property="og:image" content="https://johnhekmati.com/assets/images/john-hekmati.jpg" />
+  <meta property="og:image" content="https://johnhekmati.com/assets/images/john-hekmati.jpg?v=upres1" />
+  <link rel="canonical" href="https://johnhekmati.com/" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
   <header class="nav">
     <div class="nav-inner">
       <a class="nav-brand" href="#top">John Hekmati</a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#path">Path</a>
-        <a href="#work">Work</a>
+        <a href="#life">Life</a>
+        <a href="#builds">Builds</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Person · engineer · founder</p>
-          <h1>A real life. Real constraints. Work that had to hold.</h1>
-          <p class="lede">
-            I am a real person with a real life — this is my space to mention it in a way
-            I think matters. I also build things I believe improve people’s situations,
-            because I built them to improve mine under nearly impossible circumstances.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-            <a class="btn btn-secondary" href="https://hekmaticonsulting.com" target="_blank" rel="noopener noreferrer">
-              Hekmati Consulting Group →
-            </a>
-          </div>
-          <p class="hero-note">
-            This site is personal — who I am, how I got here, how to reach me.
-            Professional consulting:
-            <a href="https://hekmaticonsulting.com" target="_blank" rel="noopener noreferrer">hekmaticonsulting.com</a>.
-            Product work:
-            <a href="https://thecognitionfactory.com" target="_blank" rel="noopener noreferrer">The Cognition Factory</a>
-            and
-            <a href="https://formandframedesign.com" target="_blank" rel="noopener noreferrer">Form &amp; Frame Design</a>.
-          </p>
-        </div>
+    <!-- Hero: name + life charge + full-bleed portrait -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          class="hero-photo"
+          src="/assets/images/john-hekmati.jpg?v=upres1"
+          alt=""
+          width="1024"
+          height="1024"
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+      </div>
 
-        <div class="portrait">
-          <div class="portrait-frame">
-            <img
-              src="/assets/images/john-hekmati.jpg"
-              alt="John Hekmati"
-              width="640"
-              height="800"
-            />
-          </div>
-          <div class="portrait-glow" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <p class="hero-name reveal is-visible">John Hekmati</p>
+        <h1 class="reveal reveal-delay-1 is-visible">
+          A real life under load.<br />
+          Work that had to <em>hold</em>.
+        </h1>
+        <p class="lede reveal reveal-delay-2 is-visible">
+          Engineer. Father. Martial artist. Founder.
+          This is the person behind the work — and the worlds that came from living it.
+        </p>
+        <div class="hero-actions reveal reveal-delay-2 is-visible">
+          <a class="btn btn-primary" href="#contact">Contact</a>
+          <a class="btn btn-secondary" href="#builds">What I build →</a>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
+    <!-- Life -->
+    <section id="life" class="section section--life">
       <div class="wrap wrap--column">
-        <p class="section-label">About</p>
-        <h2>What matters enough to put here</h2>
-        <p>
-          I am not a brand avatar. I’m an electrical engineer by training
-          (digital signal processing — find what always holds, then pressure-test
-          the weak links). I later took on accounting credentials and enterprise
-          systems work: Dynamics&nbsp;365 Finance &amp; Supply Chain consulting,
-          with depth across SAP and Oracle environments. Those rooms punish fuzzy
-          explanations — exams and client work alike.
-        </p>
-        <p>
-          I trained seriously in martial arts for years — taekwondo in a traditional
-          line (watch the real pattern, build a load-accurate model, then prove it
-          under belt tests, sparring, and competition). That habit never left:
-          truth first, robust model second, embody until the body believes it.
-          No pedigree theater — just formation that stuck.
-        </p>
-        <p>
-          At home I’m a father of five. Three of our children have complex care
-          plans. That isn’t a pitch. It’s the operating reality that shaped how I
-          design: methods have to survive interruption, incomplete attention, and
-          hard deadlines. If it only works in a quiet four-hour block, it doesn’t work.
-        </p>
-        <div class="callout">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">01</span>Life</p>
+          <h2>Formation that stayed</h2>
+          <p class="intro">
+            Not a brand avatar. A person shaped by pressure, interruption, and standards that still apply when no one is watching.
+          </p>
+        </div>
+
+        <div class="life-block reveal">
+          <h3 class="life-title">Martial arts</h3>
           <p>
-            <strong>The question I optimize for.</strong>
-            Can you still do the work a month later — or did you only finish the material?
+            Years on the floor in a traditional taekwondo line — watch the real pattern,
+            build a load-accurate model, then prove it under belt tests, sparring, and competition.
+            That habit never left: truth first, robust model second, embody until the body believes it.
+            Martial arts remains an anchor — formation, not pedigree theater.
           </p>
         </div>
+
+        <div class="life-block reveal">
+          <h3 class="life-title">Home</h3>
+          <p>
+            Father of five. Three of our children have complex care plans.
+            That isn’t a pitch. It’s the operating reality that shaped how I design:
+            methods have to survive interruption, incomplete attention, and hard deadlines.
+            If it only works in a quiet four-hour block, it doesn’t work.
+          </p>
+        </div>
+
+        <div class="life-block reveal">
+          <h3 class="life-title">Hard domains</h3>
+          <p>
+            Electrical engineer by training — digital signal processing: find what always holds,
+            then pressure-test the weak links. Later, accounting credentials and enterprise systems
+            (Dynamics&nbsp;365 Finance &amp; Supply Chain, with SAP and Oracle depth).
+            Those rooms punish fuzzy explanations — exams and client work alike.
+          </p>
+        </div>
+
+        <p class="life-close reveal">
+          The question underneath it all:
+          <strong>Can you still do the work a month later — or did you only finish the material?</strong>
+        </p>
       </div>
     </section>
 
-    <!-- Path -->
-    <section id="path" class="section">
-      <div class="wrap wrap--column">
-        <p class="section-label">Path</p>
-        <h2>How I got here</h2>
-        <p>
-          Five chapters. Each raised the cost of unclear structure — and of
-          methods that don’t survive real load.
-        </p>
-        <ul class="steps">
-          <li>
-            <strong>1 · Engineering</strong>
-            Signal-processing work: isolate what is solid, then stress what isn’t.
+    <!-- Builds -->
+    <section id="builds" class="section section--builds">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="section-label"><span class="section-num">02</span>Builds</p>
+          <h2>Worlds that came from that life</h2>
+          <p class="intro">
+            Consulting, products, and a house martial path — each with its own home.
+            This page is who I am. Those sites are where the work lives.
+          </p>
+        </div>
+
+        <ul class="builds-list">
+          <li class="reveal">
+            <a class="build-row" href="https://hekmaticonsulting.com" target="_blank" rel="noopener noreferrer">
+              <span class="build-meta">
+                <span class="build-role">Principal</span>
+                <span class="build-name">Hekmati Consulting Group</span>
+                <span class="build-desc">Complex work with clear scope, accountable leadership, and results you can operate.</span>
+              </span>
+              <span class="build-go" aria-hidden="true">→</span>
+            </a>
           </li>
-          <li>
-            <strong>2 · Martial arts</strong>
-            Years on the floor: pattern → mental model → body under pressure.
-            Same machine as good engineering, different domain.
+          <li class="reveal reveal-delay-1">
+            <a class="build-row" href="https://thecognitionfactory.com" target="_blank" rel="noopener noreferrer">
+              <span class="build-meta">
+                <span class="build-role">Founder</span>
+                <span class="build-name">The Cognition Factory</span>
+                <span class="build-desc">Upskilling that sticks — structure, honest pressure, and a place to save when life interrupts.</span>
+              </span>
+              <span class="build-go" aria-hidden="true">→</span>
+            </a>
           </li>
-          <li>
-            <strong>3 · Real constraints</strong>
-            Family and care logistics ruled out anything that only works without interruption.
-            Clean restarts became mandatory, not nice-to-have.
+          <li class="reveal reveal-delay-1">
+            <a class="build-row" href="https://formandframedesign.com" target="_blank" rel="noopener noreferrer">
+              <span class="build-meta">
+                <span class="build-role">Founder</span>
+                <span class="build-name">Form &amp; Frame Design</span>
+                <span class="build-desc">Claimable websites from real business signals — for shops and weekend sellers.</span>
+              </span>
+              <span class="build-go" aria-hidden="true">→</span>
+            </a>
           </li>
-          <li>
-            <strong>4 · Hard domains</strong>
-            Accounting and ERP delivery — where vague understanding shows up under exam pressure
-            and in production systems.
-          </li>
-          <li>
-            <strong>5 · Building</strong>
-            Tools I needed when the calendar was loud and the stakes were high —
-            then productized so others under load can use the same loop.
+          <li class="reveal reveal-delay-2">
+            <a class="build-row" href="https://professionalmmainstitute.com" target="_blank" rel="noopener noreferrer">
+              <span class="build-meta">
+                <span class="build-role">House path</span>
+                <span class="build-name">Professional MMA Institute</span>
+                <span class="build-desc">A house martial arts path — clear ranks, honest standards, progress you can name.</span>
+              </span>
+              <span class="build-go" aria-hidden="true">→</span>
+            </a>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <!-- Principles -->
-    <section id="principles" class="section">
-      <div class="wrap wrap--column">
-        <p class="section-label">How I decide</p>
-        <h2>A few non-negotiables</h2>
-        <ul class="steps">
-          <li>
-            <strong>Truth before comfort</strong>
-            Start from what actually holds — not what feels finished.
-          </li>
-          <li>
-            <strong>Prove it under pressure</strong>
-            Closed notes when it counts. Sparring, exams, and client rooms don’t grade “I’ve seen this.”
-          </li>
-          <li>
-            <strong>Survive interruption</strong>
-            Leave a clean handoff. Next-time-you should not pay restart tax.
-          </li>
-          <li>
-            <strong>Build for my load first</strong>
-            If it doesn’t help under nearly impossible circumstances, I don’t ship it as a virtue for someone else.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="wrap wrap--column">
-        <p class="section-label">Work</p>
-        <h2>What I do</h2>
-        <p>
-          I lead client work through a consulting firm, and I build focused products
-          for people under real constraints — scarce time, money, and attention.
-          This page is who I am. The firms and products have their own homes.
-        </p>
-
-        <div class="work-card">
-          <div class="work-card-head">
-            <h3>Hekmati Consulting Group</h3>
-            <span class="badge">Principal</span>
-          </div>
-          <p>
-            Professional consulting for complex work: clear scope, accountable leadership,
-            and results you can operate — not a presentation that expires when the meeting ends.
-          </p>
-          <p class="work-actions">
-            <a class="btn btn-secondary" href="https://hekmaticonsulting.com" target="_blank" rel="noopener noreferrer">
-              hekmaticonsulting.com →
-            </a>
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-card-head">
-            <h3>The Cognition Factory</h3>
-            <span class="badge">Founder</span>
-          </div>
-          <p>
-            A system for upskilling that sticks: map the subject, practice under real pressure,
-            save your place when the day ends. For busy adults and for institutions that need
-            skill on the job — not hours logged.
-          </p>
-          <p class="work-actions">
-            <a class="btn btn-secondary" href="https://thecognitionfactory.com" target="_blank" rel="noopener noreferrer">
-              thecognitionfactory.com →
-            </a>
-          </p>
-        </div>
-
-        <div class="work-card">
-          <div class="work-card-head">
-            <h3>Form &amp; Frame Design</h3>
-            <span class="badge">Founder</span>
-          </div>
-          <p>
-            Professional websites for businesses that need a credible online presence —
-            grounded in real customer and market information, with a clear path to ownership.
-          </p>
-          <p class="work-actions">
-            <a class="btn btn-secondary" href="https://formandframedesign.com" target="_blank" rel="noopener noreferrer">
-              formandframedesign.com →
-            </a>
-          </p>
-        </div>
-
-        <p class="work-aside">
-          Background also includes enterprise systems delivery (Dynamics&nbsp;365 Finance &amp; Supply Chain,
-          with SAP and Oracle depth) — useful context for how I work under precision and load.
-        </p>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section--center">
+    <section id="contact" class="section section--contact">
       <div class="wrap wrap--center">
-        <p class="section-label">Contact</p>
-        <h2>Get in touch</h2>
-        <p>
-          A short note is enough — who you are, what you’re trying to do, and what
-          constraints are real. I read for fit, not volume.
-        </p>
-        <p class="contact-email">
-          <a href="mailto:hello@johnhekmati.com">hello@johnhekmati.com</a>
-        </p>
-        <div class="hero-actions hero-actions--center">
-          <a class="btn btn-primary" href="mailto:hello@johnhekmati.com">
-            Email me
-          </a>
-          <a class="btn btn-secondary" href="https://linkedin.com/in/johnhekmati" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a class="btn btn-secondary" href="https://github.com/johnhekmati" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
+        <div class="reveal">
+          <p class="section-label"><span class="section-num">03</span>Contact</p>
+          <h2>A short note is enough</h2>
+          <p class="intro intro--center">
+            Who you are, what you’re trying to do, and what constraints are real.
+            I read for fit, not volume.
+          </p>
+          <p class="contact-email">
+            <a href="mailto:hello@johnhekmati.com">hello@johnhekmati.com</a>
+          </p>
+          <div class="hero-actions hero-actions--center">
+            <a class="btn btn-primary" href="mailto:hello@johnhekmati.com">Email me</a>
+            <a class="btn btn-secondary" href="https://linkedin.com/in/johnhekmati" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/johnhekmati" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p class="contact-alt">
+            Consulting or client work?
+            <a href="https://hekmaticonsulting.com/#contact" target="_blank" rel="noopener noreferrer">Hekmati Consulting Group</a>.
+            Product or institutional learning systems?
+            <a href="https://thecognitionfactory.com/#contact" target="_blank" rel="noopener noreferrer">The Cognition Factory contact form</a>.
+          </p>
         </div>
-        <p class="contact-alt">
-          Consulting or client work?
-          <a href="https://hekmaticonsulting.com/#contact" target="_blank" rel="noopener noreferrer">Hekmati Consulting Group</a>.
-          Product or institutional paths for learning systems?
-          <a href="https://thecognitionfactory.com/#contact" target="_blank" rel="noopener noreferrer">The Cognition Factory contact form</a>.
-        </p>
       </div>
     </section>
   </main>
@@ -279,11 +210,40 @@
         <span class="footer-sep" aria-hidden="true">·</span>
         <a href="https://formandframedesign.com">Form &amp; Frame Design</a>
         <span class="footer-sep" aria-hidden="true">·</span>
+        <a href="https://professionalmmainstitute.com">Professional MMA Institute</a>
+        <span class="footer-sep" aria-hidden="true">·</span>
         <a href="mailto:hello@johnhekmati.com">Email</a>
         <span class="footer-sep" aria-hidden="true">·</span>
         <a href="https://linkedin.com/in/johnhekmati" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </span>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var els = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+      if (!els.length) return;
+
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduce || !("IntersectionObserver" in window)) {
+        els.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+      );
+
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
