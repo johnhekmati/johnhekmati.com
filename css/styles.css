@@ -294,6 +294,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
+  align-items: stretch;
+}
+
+.hero-actions .btn {
+  box-sizing: border-box;
+  min-height: 2.85rem;
+  justify-content: center;
+  text-align: center;
+  /* primary fills; secondary keeps 1px border — same outer box */
+  line-height: 1.25;
 }
 
 .hero-actions--center {
@@ -710,20 +720,18 @@ img {
 
   .hero-actions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.65rem;
-    justify-items: center;
+    align-items: stretch;
+    justify-items: stretch;
   }
 
   .hero-actions .btn {
     width: 100%;
+    height: 100%;
+    min-height: 2.85rem;
     justify-content: center;
-  }
-
-  .hero-actions .btn:nth-child(3) {
-    grid-column: 1 / -1;
-    width: auto;
-    min-width: 50%;
+    text-align: center;
   }
 
   .hero-photo {
