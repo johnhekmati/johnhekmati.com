@@ -6,6 +6,11 @@ Personal / founder site. Newest first.
 
 ---
 
+## 2026-07-28 — Hero action chips equal height
+
+- Hero CTAs (My Life · What I build · Contact): equal min-height, one row on desktop, stretch align
+- CSS cache-bust `jh10`
+
 ## 2026-07-28 — Release hygiene baseline
 
 - Established this changelog as required ship surface (parity with other live LOBs)
