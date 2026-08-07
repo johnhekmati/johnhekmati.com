@@ -6,6 +6,13 @@ Personal / founder site. Newest first.
 
 ---
 
+## 2026-08-06 — Modern Method Marketing joins the identity graph
+
+- Footer "Elsewhere" gains `modernmethodmarketing.com` with `rel="me"`; JSON-LD
+  `sameAs` array updated to match — per hub doctrine, every property carries the graph.
+- Micro-polish: footer link transitions, hero role-line letterspacing, visible
+  `:focus-visible` outlines for keyboard users.
+
 ## 2026-08-05 — Hero rebuild, shared spine, two new backlinks
 
 - **Alignment fix (root cause):** `.hero-content` carried `.wrap` but overrode it with

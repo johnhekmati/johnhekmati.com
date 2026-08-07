@@ -784,3 +784,10 @@ img {
     transform: none;
   }
 }
+
+
+/* 2026-08-06 micro-polish */
+.footer-links a { transition: color 0.2s ease; }
+.hero-roles { letter-spacing: 0.14em; }
+.role-accent { position: relative; }
+a:focus-visible, .btn:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }
